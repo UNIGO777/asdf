@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './hero'
+import Hero from './Hero'
 import Featuring from './Featuring'
 import AboutUs from './AboutUs'
 import SpritualGrowth from './SpritualGrowth'
