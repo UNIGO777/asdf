@@ -13,7 +13,7 @@ const Hero = () => {
   });
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {git status
+  useEffect(() => {
     fetchHeroData();
   }, []);
 
