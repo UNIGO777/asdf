@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import HeroVideo from '../assets/HeroVideo.mp4'
+
 
 const Hero = () => {
   const [heroData, setHeroData] = useState({
