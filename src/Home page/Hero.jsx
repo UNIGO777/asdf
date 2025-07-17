@@ -7,7 +7,7 @@ const Hero = () => {
     title: "नारायण गुरुकुल",
     subtitle: "श्री नारायण गुरुकुल में आपका स्वागत है",
     description: "हमारे पवित्र मंदिर में आध्यात्मिक यात्रा में हमारे साथ जुड़ें। यह स्थान आपकी आंतरिक शांति और आध्यात्मिक विकास के लिए समर्पित है।",
-    videoUrl: HeroVideo,
+    videoUrl: null,
     videoType: "mp4",
     backgroundOverlay: 0.4,
     buttonText: "अधिक जानें",

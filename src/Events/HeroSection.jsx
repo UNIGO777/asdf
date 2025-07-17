@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 
 const Hero = () => {
-  let video = HeroVideo
+  let video = null
   return (
     <div className="h-[55vh] relative z-10 overflow-hidden">
       {/* Background video with overlay */}

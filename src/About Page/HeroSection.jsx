@@ -7,7 +7,7 @@ const Hero = () => {
     title: "हमारे बारे में",
     subtitle: "श्री सिद्ध नारायण टेकड़ी",
     description: "श्री सद्गुरु नारायण स्वामी दरबार के बारे में जानें। हमारे मंदिर का इतिहास, हमारे गुरुजी और हमारे मिशन के बारे में विस्तार से पढ़ें।",
-    videoUrl: HeroVideo,
+    videoUrl: null,
     videoType: "mp4",
     backgroundOverlay: 0.4
   });
