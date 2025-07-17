@@ -35,3 +35,4 @@ uploads/
 backend/uploads/
 backend/.env
 backend/.env.local
+src/assets/HeroVideo.mp4
