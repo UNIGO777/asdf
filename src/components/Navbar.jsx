@@ -32,7 +32,7 @@ const navLinks = [
       { name: 'Donations', href: '/donations' },
       { name: 'Events', href: '/events' },
       { name: 'Books', href: '/books' },
-      // { name: 'Contact Us', href: '/contact-us' }
+      { name: 'Contact Us', href: '/contact' }
     ]
   }
 ]
@@ -57,7 +57,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='w-full fixed top-0 z-30 bg-white shadow-lg'>
+    <nav className='w-full fixed top-0 z-30 bg-white '>
       <div className='mx-auto px-4 md:px-10'>
         <div className='h-20 flex items-center justify-between'>
           <Link to='/' className='flex items-center space-x-3'>

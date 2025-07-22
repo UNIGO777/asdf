@@ -14,18 +14,23 @@ import Navbar from '../components/Navbar'
 import TamplePng from '../assets/TamplePng.png'
 import { FolderOpenIcon } from 'lucide-react'
 import Footer from '../components/Footer'
-
+import HindiBarkha from './HindiBarkha'
+import MaharajTapoStalPlaces from './MaharajTapoStalPlaces'
+import VipVisits from './VipVisits'
 
 const index = () => {
     return (
     <div className="min-h-screen bg-[#f2f0e9] relative">
-      <div className='h-16'><Navbar /></div>
+      <div className='h-20'><Navbar /></div>
      
+      <HindiBarkha />
       <Hero />
       <Featuring />
       <AboutUs />
       <SpritualGrowth />
       <OurGuruji />
+      <MaharajTapoStalPlaces/>
+      <VipVisits/>
       <RaktDaan />
       <RaktdanRegister />
       <SharmDaan />
@@ -34,9 +39,7 @@ const index = () => {
       <AnyaDaanRegister />
       <Footer/>      
       {/* Background temple image moved to bottom layer */}
-      <div className='absolute z-[0] -top-36 h-[45vh] w-screen flex justify-center'>
-        <img src={TamplePng} className='opacity-20' alt="Temple background" />
-      </div>
+      
     </div>
   )
 }

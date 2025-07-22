@@ -104,7 +104,7 @@ const Footer = () => {
           variants={containerVariants}
         >
           <motion.div className="mb-8 md:mb-0 md:w-1/3" variants={itemVariants}>
-            <h2 className="text-3xl font-bold mb-4 kalam-regular">नारायण गुरुकुल</h2>
+            <h2 className="text-3xl font-bold mb-4 kalam-regular">श्री सदगुरू नारायण स्वामी दरबार</h2>
             <p className="text-orange-200 max-w-md">
               A sacred space dedicated to spiritual growth, education, and community service. 
               Our temple serves as a beacon of light, guiding seekers on their spiritual journey.
@@ -156,7 +156,7 @@ const Footer = () => {
               </div>
               <div>
                 <h4 className="font-medium text-orange-300">Address</h4>
-                <p className="text-orange-100">123 Temple Street, Spiritual Gardens<br />Dharma City, 560001</p>
+                <p className="text-orange-100">श्री सदगुरू नारायण स्वामी दरबार, श्री सिद्ध नारायण टेकड़ी अंबाला रामटेक जि.नागपुर महाराष्ट्र  441106</p>
               </div>
             </motion.div>
             
@@ -180,7 +180,7 @@ const Footer = () => {
               </div>
               <div>
                 <h4 className="font-medium text-orange-300">Phone</h4>
-                <p className="text-orange-100">+91 98765 43210<br />+91 12345 67890</p>
+                <p className="text-orange-100">+91 82082 27505</p>
               </div>
             </motion.div>
           </div>
@@ -195,7 +195,7 @@ const Footer = () => {
           variants={containerVariants}
         >
           <motion.div className="mb-6 md:mb-0" variants={itemVariants}>
-            <p className="text-orange-200">&copy; {new Date().getFullYear()} नारायण गुरुकुल. All rights reserved.</p>
+            <p className="text-orange-200">&copy; {new Date().getFullYear()} श्री सदगुरू नारायण स्वामी दरबार. All rights reserved.</p>
           </motion.div>
           
           <motion.div className="flex space-x-4" variants={itemVariants}>

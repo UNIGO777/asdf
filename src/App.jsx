@@ -7,6 +7,7 @@ import About from './About Page'
 import Events from './Events'
 import Donations from './Donations'
 import Books from './Books'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/donations" element={<Donations />} />
           <Route path="/books" element={<Books />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-        
+        <Footer />
       </div>
     </Router>
   )

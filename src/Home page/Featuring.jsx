@@ -16,7 +16,7 @@ const FeatureCard = ({ feature, index }) => {
             <div className="text-3xl mb-4">
                 <span className="text-3xl">{feature.icon}</span>
             </div>
-            <h3 className="text-xl font-bold mb-2 kalam-regular">{feature.title}</h3>
+            <h3 className="text-xl font-bold mb-2 ">{feature.title}</h3>
             <p className="text-sm mb-4">{feature.description}</p>
         </motion.div>
     )
@@ -50,7 +50,7 @@ const Featuring = () => {
     }, []);
 
     return (
-        <section className="py-12 px-4 relative z-10">
+        <section className="py-10 px-4 relative z-10">
             <div className="max-w-7xl mx-auto">
                 <motion.h2
                     className="text-3xl font-bold text-center mb-12 kalam-regular text-gray-800"
