@@ -25,7 +25,7 @@ const HeroSection = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/bhajan-hero')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/bhajan-hero')
       
       // Check if response is ok before parsing JSON
       if (!response.ok) {

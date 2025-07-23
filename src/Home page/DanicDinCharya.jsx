@@ -51,7 +51,7 @@ const DanicDinCharya = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('/api/danic-din-charya');
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/danic-din-charya');
       const result = await response.json();
       setData(result);
     } catch (error) {

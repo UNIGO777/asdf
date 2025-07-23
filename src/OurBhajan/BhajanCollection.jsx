@@ -28,7 +28,7 @@ const BhajanCollection = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/bhajans')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/bhajans')
       
       // Check if response is ok before parsing JSON
       if (!response.ok) {

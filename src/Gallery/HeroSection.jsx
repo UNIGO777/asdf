@@ -14,7 +14,7 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchHeroData = async () => {
       try {
-        const response = await fetch('/api/gallery/hero');
+        const response = await fetch('https://narayan-website-backend.onrender.com/api/gallery/hero');
         const data = await response.json();
         if (data && data.backgroundImage) {
           // Ensure the background image URL is valid before setting

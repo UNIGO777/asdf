@@ -13,7 +13,7 @@ const MaharajTapoStalPlaces = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/maharaj-tapostal-places')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/maharaj-tapostal-places')
       if (!response.ok) {
         throw new Error('Failed to fetch data')
       }

@@ -23,7 +23,7 @@ const WhatYouCanContribute = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/contributions')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/contributions')
       const result = await response.json()
       
       if (result.success) {

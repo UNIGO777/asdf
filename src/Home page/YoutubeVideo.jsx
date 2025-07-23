@@ -26,7 +26,7 @@ const YoutubeVideo = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/youtube-video')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/youtube-video')
       const result = await response.json()
       
       if (result.success) {

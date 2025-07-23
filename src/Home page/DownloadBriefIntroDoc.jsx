@@ -25,7 +25,7 @@ const DownloadBriefIntroDoc = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/brief-intro-docs')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/brief-intro-docs')
       const result = await response.json()
       
       if (result.success) {
@@ -78,7 +78,7 @@ const DownloadBriefIntroDoc = () => {
 
   const trackDownload = async (documentId) => {
     try {
-      await fetch(`/api/brief-intro-docs/download/${documentId}`, {
+      await fetch(`https://narayan-website-backend.onrender.com/api/brief-intro-docs/download/${documentId}`, {
         method: 'POST'
       })
     } catch (error) {

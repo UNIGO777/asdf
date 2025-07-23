@@ -24,7 +24,7 @@ const YoutubeChannel = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('/api/bhajan-youtube-channel')
+      const response = await fetch('https://narayan-website-backend.onrender.com/api/bhajan-youtube-channel')
       
       // Check if response is ok before parsing JSON
       if (!response.ok) {

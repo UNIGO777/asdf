@@ -14,7 +14,7 @@ const OurGallery = () => {
   useEffect(() => {
     const fetchGalleryData = async () => {
       try {
-        const response = await fetch('/api/gallery/images');
+        const response = await fetch('https://narayan-website-backend.onrender.com/api/gallery/images');
         const data = await response.json();
         
         // Set images
