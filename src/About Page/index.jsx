@@ -6,6 +6,10 @@ import OurGuruji from '../Home page/OurGuruji'
 import SpritualGrowth from '../Home page/SpritualGrowth'
 import Footer from '../components/Footer'
 import TampleHistory from './TampleHistory'
+import HindiBarkha from '../Home page/HindiBarkha'
+import MaharajTapoStalPlaces from '../Home page/MaharajTapoStalPlaces'
+import VipVisits from '../Home page/VipVisits'
+import DanicDinCharya from '../Home page/DanicDinCharya'
 import { Element } from 'react-scroll'
 import { useLocation } from 'react-router-dom'
 
@@ -26,31 +30,37 @@ const index = () => {
   }, [location]);
 
   return (
-    <>
-      <div className='h-16'><Navbar /></div>
-
+    <div className="min-h-screen bg-[#f2f0e9] relative">
+      <div className='h-20'><Navbar /></div>
+      
       <Element name="hero" id="hero">
-        <HeroSection/>
+        <HeroSection />
       </Element>
-
+      
+      <HindiBarkha />
+      
       <Element name="about" id="about">
-        <AboutUs/>
+        <AboutUs />
       </Element>
 
       <Element name="history" id="history">
-        <TampleHistory/>
+        <TampleHistory />
       </Element>
 
       <Element name="spiritual" id="spiritual">
-        <SpritualGrowth/>
+        <SpritualGrowth />
       </Element>
 
       <Element name="guruji" id="guruji">
-        <OurGuruji/>
+        <OurGuruji />
       </Element>
 
-      <Footer/>
-    </>
+      <DanicDinCharya />
+      <MaharajTapoStalPlaces />
+      <VipVisits />
+
+      
+    </div>
   )
 }
 

@@ -13,7 +13,7 @@ const MaharajTapoStalPlaces = () => {
   const fetchData = async () => {
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:5003/api/maharaj-tapostal-places')
+      const response = await fetch('/api/maharaj-tapostal-places')
       if (!response.ok) {
         throw new Error('Failed to fetch data')
       }

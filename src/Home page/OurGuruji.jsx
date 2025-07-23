@@ -214,33 +214,54 @@ const GuruCard = ({ guru, index, onImageClick }) => {
   return (
     <motion.div 
       className={`${guru.bgColor} flex flex-col items-center text-center overflow-hidden cursor-pointer relative group`}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ scale: 1.02, y: -5 }}
+      initial={{ opacity: 0, y: 50, scale: 0.9 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ 
+        duration: 0.6, 
+        delay: index * 0.2,
+        type: "spring",
+        stiffness: 100
+      }}
+      whileHover={{ 
+        scale: 1.05,
+        y: -10,
+        transition: { duration: 0.3 }
+      }}
       onClick={() => onImageClick(guru)}
     >
       <div className="mb-4 w-full h-[50vh] overflow-hidden relative">
-        <img 
+        <motion.img 
           src={guru.image} 
           alt={guru.name} 
-          className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover"
+          initial={{ scale: 1.2 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.6 }}
         />
         
         {/* Multiple images indicator */}
         {hasMultipleImages && (
-          <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 shadow-lg">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.4 }}
+            className="absolute top-3 right-3 bg-black/70 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 shadow-lg"
+          >
             <Camera size={14} />
             <span>{guru.images.length}</span>
-          </div>
+          </motion.div>
         )}
         
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-6">
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-6"
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 1 }}
+        >
           <motion.div 
             className="text-white text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileHover={{ opacity: 1, y: 0 }}
+            initial={{ y: 20, opacity: 0 }}
+            whileHover={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
             <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
@@ -248,13 +269,18 @@ const GuruCard = ({ guru, index, onImageClick }) => {
             </div>
             <p className="text-sm mt-2 font-medium">View Gallery</p>
           </motion.div>
-        </div>
+        </motion.div>
         
         {/* Click indicator */}
         <div className="absolute inset-0 border-2 border-transparent group-hover:border-orange-400 transition-all duration-300 rounded-lg"></div>
       </div>
       
-      <div className='p-4 flex-1 flex flex-col justify-center'>
+      <motion.div 
+        className='p-4 flex-1 flex flex-col justify-center'
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.4 }}
+      >
         <h3 className="text-xl font-bold mb-3 text-orange-600 transition-colors duration-300">
           {guru.name}
         </h3>
@@ -265,7 +291,7 @@ const GuruCard = ({ guru, index, onImageClick }) => {
         {/* View gallery button */}
         {hasMultipleImages && (
           <motion.button
-            className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105"
+            className="mt-4 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={(e) => {
@@ -276,7 +302,7 @@ const GuruCard = ({ guru, index, onImageClick }) => {
             View Gallery ({guru.images.length} photos)
           </motion.button>
         )}
-      </div>
+      </motion.div>
     </motion.div>
   )
 }

@@ -168,7 +168,7 @@ const TempleHistory = () => {
         {/* Spiritual Significance Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {data.spiritualSignificance.map((item, index) => (
-            <div key={index} className={`bg-gradient-to-br ${item.gradient} text-white p-8 rounded-lg`}>
+            <div key={index} className={`bg-gradient-to-br bg-orange-500 text-white p-8 rounded-lg`}>
               {renderIcon(item.icon)}
               <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
               <p className="opacity-90">{item.description}</p>

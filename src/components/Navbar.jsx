@@ -32,6 +32,8 @@ const navLinks = [
       { name: 'Donations', href: '/donations' },
       { name: 'Events', href: '/events' },
       { name: 'Books', href: '/books' },
+      { name: 'Bhajan', href: '/bhajan' },
+      { name: 'Gallery', href: '/gallery' },
       { name: 'Contact Us', href: '/contact' }
     ]
   }
@@ -55,6 +57,15 @@ const Navbar = () => {
       window.location.href = category.href + link.href
     }
   }
+
+  const navigationItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Events', href: '/events' },
+    { name: 'Bhajan', href: '/bhajan' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Donations', href: '/donations' },
+  ]
 
   return (
     <nav className='w-full fixed top-0 z-30 bg-white '>
